@@ -7,14 +7,20 @@
 
 
 body{
-    background-color: rgb(44, 43, 43);
+    background-color: black;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(img/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 .contenedor{
     width: 90%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
     padding: 20px;
-    background-color: rgb(70, 68, 68);
+   
     color: white;
 
 }
@@ -25,7 +31,12 @@ body{
 h1{
     font-size: 2rem;
     font-family: 'Rubik Puddles', cursive;
+    transition: all 300ms;
 }
+h1:hover{
+    transform: scale(1.15);
+}
+
 h2{
     font-size: 1.5rem;
 }
@@ -39,11 +50,14 @@ body{
 }
 
 
-
+nav{
+    background-color: grey;
+}
 
 nav .contenedor{
+    width: 100%;
     padding-bottom: 50px;
-    
+    background-color: grey;
 }
 nav h1{
     padding-top:20px ;
@@ -57,11 +71,16 @@ nav ul{
 nav li{
     list-style: none;
     text-align: center;
+    
 }
+
 
 nav a{
     text-decoration: none;
     color: white;
+}
+nav a:hover{
+    color: blue;
 }
 
 
@@ -70,6 +89,8 @@ nav a{
 
 
 header .contenedor{
+    width: 100%;
+    margin: 0;
     padding-top: 200px;
     padding-bottom: 200px ;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(img/header.jpg);
@@ -77,6 +98,28 @@ header .contenedor{
     background-position: center center;
 }
 
+header h2{
+        opacity: 1;
+    
+        animation-name: fade-in;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: .5s;
+}
+
+@keyframes fade-in{
+    0%{
+        transform: translateX(800px);
+        opacity: 0;
+    }
+
+
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 
 
 
@@ -99,6 +142,32 @@ section p{
 section img{
     height: 300px;
 }
+
+section img{
+    opacity: 1;
+
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: .5s;
+}
+
+@keyframes fade-in{
+0%{
+    transform: translateX(800px);
+    opacity: 0;
+}
+
+
+
+100%{
+    transform: translateX(0px);
+    opacity: 1;
+}
+}
+
+
+
 
 .img-productos{
     height: 175px;
@@ -151,11 +220,12 @@ section img{
 
     nav li{
         display: inline;
-        padding: 5px;
+
+        padding: 10px;
     }
     
     nav a{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-decoration: none;
         color: rgb(223, 217, 217);
     }
