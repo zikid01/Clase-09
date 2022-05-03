@@ -2,13 +2,132 @@
     padding: 0;
     margin: 0;
 }
+     
 
-h1{
-    font-size: 3rem;
-    font-family: 'Rubik Puddles', cursive;
-}
+
 
 body{
+    background-color: rgb(44, 43, 43);
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(70, 68, 68);
+    color: white;
+
+}
+
+
+
+
+h1{
+    font-size: 2rem;
+    font-family: 'Rubik Puddles', cursive;
+}
+h2{
     font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+body{
+    font-size: 1rem;
     font-family:'Gochi Hand', cursive;
+}
+
+
+
+
+nav .contenedor{
+    padding-bottom: 50px;
+    
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+header .contenedor{
+    padding-top: 200px;
+    padding-bottom: 200px ;
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
+section .contenedor{
+    padding-top: 150px;
+}
+
+
+section h3{
+    text-align: center;
+}
+
+section p{
+    justify-content: center;
+    text-align: center;
+}
+
+
+section img{
+    height: 300px;
+}
+
+.img-productos{
+    height: 175px;
+}
+
+
+
+.footer_menu{
+    text-align: center;
+}
+
+.footer_menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_menu li{
+    list-style: none;
+    
+}
+
+.footer_redes{
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.footer_redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_redes li{
+    list-style: none;
+    
+}
+
+.footer_info{
+    padding-top: 20px;
+    text-align: center;
 }
